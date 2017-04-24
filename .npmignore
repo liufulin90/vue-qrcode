@@ -1,0 +1,12 @@
+.DS_Store
+*.log
+example
+dist
+test
+node_modules
+.idea/*
+.eslintignore
+.gitignore
+webpack.build.js
+webpack.config.js
+index.html

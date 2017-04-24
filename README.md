@@ -1,11 +1,11 @@
 # vue-qrcode
 
-A Vue component to generate [QR codes](http://en.wikipedia.org/wiki/QR_code).
+一个基于VUE生成组件（二维码） [QR codes](http://en.wikipedia.org/wiki/QR_code).
 
 ## Usage
 
 ```html
-<qrcode val="https://github.com/"></qrcode>
+<qrcode size="200" bg-color="#FFFFFF" fg-color="#000000" val="https://github.com/"></qrcode>
 ```
 
 ## Available Props
