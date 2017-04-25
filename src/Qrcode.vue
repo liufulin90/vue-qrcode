@@ -15,10 +15,6 @@
 <script>
 import qr from 'qr.js'
 
-const update = function() {
-  this.update();
-}
-
 export default {
   props: {
     val: {
@@ -40,10 +36,15 @@ export default {
       default: '#000000'
     }
   },
-  beforeUpdate: update,
-  mounted: update,
+  beforeUpdate () {
+    this.update()
+  },
+  mounted () {
+    this.update()
+  },
   methods: {
     update() {
+      console.log(this.size)
       var size = this.size
       var bgColor = this.bgColor
       var fgColor = this.fgColor

@@ -1,5 +1,5 @@
 import Qrcode from './Qrcode.vue'
-
+import Vue from 'vue'
 Vue.config.debug = true
 
 new Vue({

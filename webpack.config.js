@@ -3,13 +3,13 @@ var webpack = require("webpack")
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 var cssLoader = ExtractTextPlugin.extract("style-loader", "css-loader")
-
+var path = require('path')
 module.exports = {
   entry: {
     app: './src/app.js'
   },
   output: {
-    path: './build',
+    path: __dirname + '/build',
     publicPath: '/build/',
     filename: 'bundle.js'
   },
